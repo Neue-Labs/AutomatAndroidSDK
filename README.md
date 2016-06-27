@@ -100,7 +100,7 @@ private AutomatMotionHandler motionHandler = new AutomatMotionHandler() {
     };
 ```
 
-Check out: to see a very simple demo project that displays the use of the above examples.
+Check out [this project](https://github.com/Neue-Labs/Automat-Android-Example), to see a very simple demo project that displays the use of the above examples.
 
 
 
