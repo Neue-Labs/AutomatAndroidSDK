@@ -17,11 +17,19 @@ To add this to your project in Android Studio, do the following:
 - In the 'build.gradle' file for the project, app level (Module: app), under 'dependencies', add: compile project(':neuelabsautomat-release')
 - Sync gradle
 - In the Android Manifest file add the following lines:
+```java
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+```
 - Also in the Android Manifest, in the <application> tag, add the following:
+```java
     <service android:name="com.neuelabs.neuelabsautomat.AutomatConnectionManager" android:enabled="true"/>
+```
+- In the gradle file of the app (build.gradle (Module:app)) you need to add a dependency:
+```java
+    compile 'com.jakewharton.timber:timber:4.3.0'
+```
 
 ## Usage
 First you need to make sure the user has granted permission for location access.
